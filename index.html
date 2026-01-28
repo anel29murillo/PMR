@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" type="image/jpg" href="logotipo.jpg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diseño e Ingeniería PMR</title>
@@ -31,26 +32,19 @@
 /* ===== BASE ===== */
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     color: #f2f2f2;
     background: linear-gradient(rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.85)), 
                 url('logotipo.jpg'); 
-    
-    /* Con 'cover' la imagen siempre cubrirá todo el fondo mientras bajas */
-    background-size: cover; 
+    background-size: 80%; /* Ajusta este % para que el logo no sea gigante en móvil */
     background-position: center;
     background-repeat: no-repeat;
-    
-    /* 'fixed' hace que el fondo se mantenga visible aunque el contenido se mueva */
-    background-attachment: fixed; 
+    background-attachment: fixed; /* Esto hace que el logo se quede en la 'ventana' visual */
     background-color: #111; 
 }
 
 @media (min-width: 768px) {
-    body { 
-        /* En computadoras, 'contain' evita que el logo se estire demasiado */
-        background-size: contain; 
-    }
+    body { background-size: 30%; } /* En PC se ve más pequeño y elegante */
 }
 
 header {
@@ -212,6 +206,7 @@ footer {
 
 </body>
 </html>
+
 
 
 
