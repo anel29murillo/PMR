@@ -35,15 +35,22 @@ body {
     color: #f2f2f2;
     background: linear-gradient(rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.85)), 
                 url('logotipo.jpg'); 
-    background-size: 90%; 
-    background-position: center 150px;
+    
+    /* Con 'cover' la imagen siempre cubrirá todo el fondo mientras bajas */
+    background-size: cover; 
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll; 
+    
+    /* 'fixed' hace que el fondo se mantenga visible aunque el contenido se mueva */
+    background-attachment: fixed; 
     background-color: #111; 
 }
 
 @media (min-width: 768px) {
-    body { background-size: 35%; background-position: center 120px; }
+    body { 
+        /* En computadoras, 'contain' evita que el logo se estire demasiado */
+        background-size: contain; 
+    }
 }
 
 header {
@@ -205,3 +212,4 @@ footer {
 
 </body>
 </html>
+
