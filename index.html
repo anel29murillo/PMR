@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diseño e Ingeniería PMR</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+/* ===== BASE ===== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+    background: linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.75)), 
+                url('logotipo.jpg.jpeg'); 
+    background-size: 80%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-color: #111; 
+}
+
+@media (min-width: 768px) {
+    body { background-size: 40%; }
+}
+
+header {
+    background: rgba(29, 28, 28, 0.9);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+    header { flex-direction: row; gap: 20px; }
+    header img { width: 150px; }
+}
+
+/* ESTILOS DE CONTENIDO */
+.container { padding: 15px; max-width: 1100px; margin: auto; }
+.card { background: rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 18px; margin-bottom: 22px; }
+.card h2 { text-align: center; font-size: 1.3rem; border-bottom: 2px solid #f0a500; padding-bottom: 8px; }
+.grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+.section h3 { background: rgba(255,255,255,0.15); padding: 10px; border-radius: 12px; text-align: center; }
+ul { padding-left: 18px; }
+li { margin: 10px 0; }
+.contact { text-align: center; }
+.social { display: flex; justify-content: center; gap: 18px; margin-top: 18px; }
+.social a { background: #222; color: #fff; padding: 16px; border-radius: 50%; font-size: 1.4rem; text-decoration: none; }
+.cta { display: block; margin-top: 20px; background: #f0a500; color: #000; padding: 15px; border-radius: 30px; font-weight: bold; text-decoration: none; }
+footer { background: rgba(0,0,0,0.9); text-align: center; padding: 15px; font-size: 0.85rem; color: #ccc; }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="logotipo.jpg.jpeg" alt="Logo PMR">
+    <div>
+        <h1>Diseño y Servicios de Ingeniería PMR</h1>
+        <p>Permisos de construcción y planos</p>
+    </div>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Requisitos Permiso de Construcción B.V</h2>
+        <div class="grid">
+            <div class="section">
+                <h3>Datos</h3>
+                <ul><li>Valor de la obra</li><li>Número de lote</li><li>Finca o folio real</li><li>Tomo · Folio · Rollo</li></ul>
+            </div>
+            <div class="section">
+                <h3>Documentos</h3>
+                <ul><li>Cédula del propietario</li><li>Certificado DINASEPI</li><li>Certificado de propiedad</li><li>Croquis sellado</li></ul>
+            </div>
+            <div class="section">
+                <h3>Memoriales</h3>
+                <ul><li>Junta Comunal</li><li>Bomberos</li><li>Salud</li><li>MUPA</li></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Servicios de Planos</h2>
+        <ul>
+            <li>Dibujo por hoja</li>
+            <li>Sello Arquitecto e Ingeniero</li>
+            <li>Sello eléctrico y plomería</li>
+            <li>Diseño eléctrico, gas y contra incendio</li>
+        </ul>
+    </div>
+
+    <div class="card contact">
+        <h2>Contacto</h2>
+        <div class="social">
+            <a href="https://wa.me/50767028683"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:ing.pablomur.ra@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <a class="cta" href="https://wa.me/50767028683">Solicitar asesoría por WhatsApp</a>
+    </div>
+</div>
+
+<footer>
+    <p><strong>Diseño y Servicios de Ingeniería PMR</strong></p>
+    <p>© 2026 Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
